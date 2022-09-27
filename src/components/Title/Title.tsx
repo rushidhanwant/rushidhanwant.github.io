@@ -5,13 +5,14 @@ import { StyledTitle } from "./Style";
 interface Props {
   size: string;
   weight: string;
-  family: string;
+  family?: string;
   lineHeight: string;
+  style?: any;
   children: JSX.Element;
 }
 
 const Title = (props: Props) => {
-  const { size, weight, family, lineHeight } = props;
+  const { size, weight, family, lineHeight, style } = props;
 
   return (
     <StyledTitle
@@ -19,6 +20,7 @@ const Title = (props: Props) => {
       weight={weight}
       family={family}
       lineHeight={lineHeight}
+      style={style}
     >
       {props.children}
     </StyledTitle>

@@ -9,6 +9,7 @@ export const StyledPrimaryButton = styled.button`
   border: 3px solid #ffffff;
   color: white;
   font-style: normal;
+  font-family: 'Death Star';
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
