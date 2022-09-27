@@ -1,6 +1,11 @@
 import React from "react";
+import Title from "../Title/Title";
 
 const LandingPage = () => {
-  return <div></div>;
+  return (
+    <Title size="100px" family="Death Star" weight="400" lineHeight="115px">
+      <span>HEY, WE'RE DMC-12</span>
+    </Title>
+  );
 };
 export default LandingPage;
