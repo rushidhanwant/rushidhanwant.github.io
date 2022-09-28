@@ -25,6 +25,10 @@ export const AppWrapper = styled.div`
 export const ContentWrapper = styled.section`
   position: absolute;
   z-index: 0;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
 `;
 
 export const MainSection = styled.section`
