@@ -1,6 +1,6 @@
 import { LogoIcon } from "../Icons";
 import { DiscordIcon, TwitterIcon, UnknownIcon } from "../Icons/Icons";
-import Title from "../Title/Title";
+import Title from "../Text/Text";
 import { FootWrapper, LeftWrapper, RightWrapper, RowWrapper } from "./Style";
 
 const Footer = () => {

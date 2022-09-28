@@ -6,7 +6,7 @@ import { NavWrapper } from "./Style";
 const Header = () => {
   return (
     <NavWrapper>
-      <LogoIcon />
+      <LogoIcon width="10%" height="auto" />
       <PrimaryButton text="Chat with us" />
     </NavWrapper>
   );

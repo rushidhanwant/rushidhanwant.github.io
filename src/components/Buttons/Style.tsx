@@ -9,7 +9,7 @@ export const StyledPrimaryButton = styled.button`
   border: 3px solid #ffffff;
   color: white;
   font-style: normal;
-  font-family: 'Death Star';
+  font-family: "Death Star";
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
@@ -21,6 +21,4 @@ export const StyledPrimaryButton = styled.button`
   }
 `;
 
-export const ButtonWrapper = styled.div`
-  margin-top: 15px;
-`;
+export const ButtonWrapper = styled.div``;

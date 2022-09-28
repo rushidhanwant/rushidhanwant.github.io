@@ -3,7 +3,7 @@ import { IconProps } from "./types";
 
 const Rectangle = ({
   width = "349",
-  height = "249",
+  height = "483",
   classes = "",
 }: IconProps) => {
   return (
