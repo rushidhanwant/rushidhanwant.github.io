@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledTitle } from "./Style";
+import { StyledText } from "./Style";
 
 interface Props {
   size: string;
@@ -11,11 +11,11 @@ interface Props {
   children: JSX.Element;
 }
 
-const Title = (props: Props) => {
+const Text = (props: Props) => {
   const { size, weight, family, lineHeight, style } = props;
 
   return (
-    <StyledTitle
+    <StyledText
       size={size}
       weight={weight}
       family={family}
@@ -23,13 +23,13 @@ const Title = (props: Props) => {
       style={style}
     >
       {props.children}
-    </StyledTitle>
+    </StyledText>
   );
 };
 
-export default Title;
+export default Text;
 
-Title.proptypes = {
+Text.proptypes = {
   size: PropTypes.string.isRequired,
   weight: PropTypes.string.isRequired,
   family: PropTypes.string.isRequired,

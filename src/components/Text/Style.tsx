@@ -10,7 +10,7 @@ interface props {
   text?: string;
 }
 
-export const StyledTitle = styled.div`
+export const StyledText = styled.div`
   font-family: ${(props: props) =>
     props.family ? props.family : "Death Star"};
   font-style: normal;
