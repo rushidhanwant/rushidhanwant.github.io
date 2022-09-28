@@ -7,6 +7,7 @@ export const StyledPrimaryButton = styled.button`
   width: ${(props: ButtonProps) => props.width || "224px"};
   height: ${(props: ButtonProps) => props.height || "63px"};
   border: 3px solid #ffffff;
+  cursor: pointer;
   color: white;
   font-style: normal;
   font-family: "Death Star";
