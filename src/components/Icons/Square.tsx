@@ -18,7 +18,7 @@ const Square = ({ width = "349", height = "294", classes = "" }: IconProps) => {
         rx="27"
         fill="#171538"
         stroke="#BF54C7"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <rect
         x="22"
@@ -27,7 +27,7 @@ const Square = ({ width = "349", height = "294", classes = "" }: IconProps) => {
         height="245"
         rx="19"
         stroke="#D94067"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

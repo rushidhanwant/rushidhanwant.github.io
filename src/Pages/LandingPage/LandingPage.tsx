@@ -150,13 +150,19 @@ const LandingPage = () => {
         </PastWorkWrapper>
         <CompanyLogo>
           <ImageContainer>
-            <img src={Messari} width="100%" height="auto" />
+            <a href={"https://messari.io/"} target={"_blank"}>
+              <img src={Messari} width="100%" height="auto" />
+            </a>
           </ImageContainer>
           <ImageContainer>
-            <img src={Macys} width="100%" height="auto" />
+            <a href={"https://www.macysinc.com/"} target={"_blank"}>
+              <img src={Macys} width="100%" height="auto" />
+            </a>
           </ImageContainer>
           <ImageContainer>
-            <img src={Clipto} width="70" height="auto" />
+            <a href={"https://www.clipto.io/"} target={"_blank"}>
+              <img src={Clipto} width="70px" height="auto" />
+            </a>
           </ImageContainer>
         </CompanyLogo>
       </section>

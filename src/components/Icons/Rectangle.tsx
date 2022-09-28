@@ -22,7 +22,7 @@ const Rectangle = ({
         rx="27"
         fill="#171538"
         stroke="#BF54C7"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <rect
         x="24"
@@ -31,7 +31,7 @@ const Rectangle = ({
         height="440"
         rx="19"
         stroke="#D94067"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

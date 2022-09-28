@@ -16,14 +16,14 @@ const Circle = ({ width = "350", height = "350", classes = "" }: IconProps) => {
         r="174"
         fill="#171538"
         stroke="#BF54C7"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <circle
         cx="174.5"
         cy="175.5"
         r="161.5"
         stroke="#D94067"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

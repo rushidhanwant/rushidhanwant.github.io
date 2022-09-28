@@ -2,10 +2,15 @@ import React from "react";
 import { ButtonWrapper, StyledPrimaryButton } from "./Style";
 import { PrimaryButtonProps } from "./types";
 
-const PrimaryButton = ({ width, height, text }: PrimaryButtonProps) => {
+const PrimaryButton = ({
+  width,
+  height,
+  text,
+  onClick,
+}: PrimaryButtonProps) => {
   return (
     <ButtonWrapper>
-      <StyledPrimaryButton width={width} height={height}>
+      <StyledPrimaryButton width={width} height={height} onClick={onClick}>
         {text}
       </StyledPrimaryButton>
     </ButtonWrapper>

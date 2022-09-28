@@ -28,7 +28,9 @@ const Footer = () => {
         </Title>
         <RowWrapper>
           <TwitterIcon />
-          <DiscordIcon />
+          <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
+            <DiscordIcon />
+          </a>
           <UnknownIcon />
         </RowWrapper>
         <Title

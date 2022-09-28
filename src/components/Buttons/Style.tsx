@@ -17,7 +17,7 @@ export const StyledPrimaryButton = styled.button`
   border-radius: 28px;
 
   &:hover {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
   }
 `;
 
