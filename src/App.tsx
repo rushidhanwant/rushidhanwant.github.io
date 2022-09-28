@@ -2,11 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LandingPage from "./Pages/LandingPage/LandingPage";
-import { GlobalStyle } from "./Style";
+import { GlobalStyle, AppWrapper } from "./Style";
 
 function App() {
   return (
-    <div>
+    <AppWrapper>
       <BrowserRouter>
         <GlobalStyle />
         <Header />
@@ -15,7 +15,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+    </AppWrapper>
   );
 }
 

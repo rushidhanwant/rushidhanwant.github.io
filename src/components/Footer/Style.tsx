@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 export const FootWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
-  margin: 25px 55px;
   text-align: left;
+  width: 100%;
+  padding: 22px;
+  box-sizing: border-box;
 `;
 
 export const LeftWrapper = styled.div`
