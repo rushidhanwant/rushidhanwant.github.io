@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonWrapper, StyledPrimaryButton } from "./Style";
+import { StyledPrimaryButton } from "./Style";
 import { PrimaryButtonProps } from "./types";
 
 const PrimaryButton = ({
@@ -9,11 +9,9 @@ const PrimaryButton = ({
   onClick,
 }: PrimaryButtonProps) => {
   return (
-    <ButtonWrapper>
-      <StyledPrimaryButton width={width} height={height} onClick={onClick}>
-        {text}
-      </StyledPrimaryButton>
-    </ButtonWrapper>
+    <StyledPrimaryButton width={width} height={height} onClick={onClick}>
+      {text}
+    </StyledPrimaryButton>
   );
 };
 

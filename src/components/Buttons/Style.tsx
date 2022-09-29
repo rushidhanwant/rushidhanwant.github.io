@@ -21,5 +21,3 @@ export const StyledPrimaryButton = styled.button`
     border: 2px solid #ffffff;
   }
 `;
-
-export const ButtonWrapper = styled.div``;
