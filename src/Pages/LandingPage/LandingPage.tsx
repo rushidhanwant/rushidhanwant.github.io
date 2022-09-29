@@ -58,15 +58,13 @@ const LandingPage = () => {
             family="Raven Sans NBP"
             weight="400"
             lineHeight="276.04%"
+            style={{ width: "80%", margin: "auto" }}
           >
             <span>
               DMC-12 collaborates on web3 projects and accelerates their build.
-              <br />
               Whether you're just starting, have built something sweet in web3
-              and
-              <br /> need some skilful input, or want someone to bounce ideas
-              off, you can <br />
-              speak to us.
+              and need some skilful input, or want someone to bounce ideas off,
+              you can speak to us.
             </span>
           </Text>
         </AboutTextWrapper>
@@ -142,7 +140,7 @@ const LandingPage = () => {
         </StackWrapper>
       </section>
 
-      <section>
+      <section style={{ margin: "50px", marginBottom: "10%" }}>
         <PastWorkWrapper>
           <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
             <span>Stuff we'’ve helped build</span>

@@ -6,11 +6,6 @@ import { ContentWrapper, MainSection } from "./Style";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ContentWrapper>
-      <img src={background} width="100%" height="100%" />
-      <MainSection>
-        <App />
-      </MainSection>
-    </ContentWrapper>
+    <App />
   </React.StrictMode>
 );

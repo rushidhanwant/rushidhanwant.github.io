@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     overflow-x: hidden;
+    background-color:#09032B;
+    background-image: url("/assets/dmc12-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   body {
     height:100%;
@@ -19,20 +23,21 @@ export const GlobalStyle = createGlobalStyle`
 
 export const AppWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 export const ContentWrapper = styled.section`
-  position: absolute;
+  position: relative;
   z-index: 0;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
   width: 100vw;
+  height: auto;
 `;
 
 export const MainSection = styled.section`
-  position: absolute;
+  position: relative;
   z-index: 1;
   top: 0;
   width: 100%;
