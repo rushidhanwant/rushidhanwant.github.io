@@ -2,14 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 export const FootWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  width: 100%;
-  padding: 22px;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 200px;
   box-sizing: border-box;
 `;
 
@@ -51,8 +50,6 @@ export const RowWrapper = styled.div`
 `;
 
 export const MobileFootWrapper = styled.div`
-  position: absolute;
-  bottom: 0;
   width: 100%;
   display: flex;
   margin-bottom: 82px;

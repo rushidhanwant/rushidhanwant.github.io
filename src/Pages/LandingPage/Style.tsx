@@ -51,7 +51,7 @@ export const ShapeWrapper = styled.div`
 
 export const PastWorkWrapper = styled.div`
   width: 100%;
-  padding: 5%;
+  padding: 80px;
   box-sizing: border-box;
 `;
 
@@ -61,7 +61,6 @@ export const CompanyLogo = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  margin-bottom: 10%;
 `;
 
 export const ImageContainer = styled.div`
