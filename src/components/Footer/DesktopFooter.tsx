@@ -16,6 +16,7 @@ const DesktopFooter = () => {
         <Title
           size="16px"
           weight="400"
+          family="Raven Sans NBP"
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >
@@ -36,6 +37,7 @@ const DesktopFooter = () => {
         <Title
           size="16px"
           weight="400"
+          family="Raven Sans NBP"
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >

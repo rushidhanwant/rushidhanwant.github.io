@@ -12,6 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url("/assets/dmc12-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: 768px){
+      background-image: url("/assets/dmc12-background-mobile.png");
+      background-position: center top 0px;
+    }
   }
   body {
     height:100%;

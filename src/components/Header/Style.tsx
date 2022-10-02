@@ -6,6 +6,6 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
 `;

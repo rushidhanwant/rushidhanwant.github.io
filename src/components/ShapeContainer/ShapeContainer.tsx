@@ -27,7 +27,7 @@ const ShapeContainer = (props: Props) => {
         style={{
           position: "absolute",
           width: "100%",
-          top: type == "triangle" ? "20%" : "45%",
+          top: type == "triangle" ? "25%" : "45%",
           margin: "auto",
         }}
       >

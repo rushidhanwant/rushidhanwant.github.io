@@ -11,6 +11,8 @@ import {
   PastWorkWrapper,
   CompanyLogo,
   ImageContainer,
+  WorkSection,
+  PastWorkSection,
 } from "./Style";
 import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
@@ -23,19 +25,14 @@ const LandingPage = () => {
     <>
       <section>
         <HeadingWrapper>
-          <Text
-            size="100px"
-            family="Death Star"
-            weight="400"
-            lineHeight="115px"
-          >
+          <Text size="7vw" family="Death Star" weight="400" lineHeight="8vw">
             <span>HEY, WE'RE DMC-12</span>
           </Text>
           <Text
-            size="20px"
+            size="1.4vw"
             family="Raven Sans NBP"
             weight="400"
-            lineHeight="40px"
+            lineHeight="2.8vw"
           >
             <span>WE’RE HELPING BUILD WEB3</span>
           </Text>
@@ -44,7 +41,13 @@ const LandingPage = () => {
 
       <section>
         <FunnyTextWrapper>
-          <Text size="20px" family="Death Star" weight="400" lineHeight="23px">
+          <Text
+            size="20px"
+            family="Death Star"
+            weight="400"
+            lineHeight="23px"
+            style={{}}
+          >
             <span>
               'I g-guess you guys aren't ready for that yet. But your kids are
               gonna love it'
@@ -58,7 +61,7 @@ const LandingPage = () => {
             family="Raven Sans NBP"
             weight="400"
             lineHeight="276.04%"
-            style={{ width: "80%", margin: "auto" }}
+            style={{}}
           >
             <span>
               DMC-12 collaborates on web3 projects and accelerates their build.
@@ -70,7 +73,7 @@ const LandingPage = () => {
         </AboutTextWrapper>
       </section>
 
-      <section>
+      <WorkSection>
         <WorkWrapper>
           <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
             <span>THING S WE DO</span>
@@ -138,9 +141,9 @@ const LandingPage = () => {
             </ShapeContainer>
           </Row>
         </StackWrapper>
-      </section>
+      </WorkSection>
 
-      <section style={{ margin: "50px", marginBottom: "10%" }}>
+      <PastWorkSection>
         <PastWorkWrapper>
           <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
             <span>Stuff we'’ve helped build</span>
@@ -159,11 +162,11 @@ const LandingPage = () => {
           </ImageContainer>
           <ImageContainer>
             <a href={"https://www.clipto.io/"} target={"_blank"}>
-              <img src={Clipto} width="70px" height="auto" />
+              <img src={Clipto} width="50%" height="auto" />
             </a>
           </ImageContainer>
         </CompanyLogo>
-      </section>
+      </PastWorkSection>
     </>
   );
 };

@@ -5,7 +5,12 @@ import MobileFooter from "./MobileFooter";
 const Footer = () => {
   const { isTablet } = useScreenSize();
 
-  return <>{isTablet ? <DesktopFooter /> : <MobileFooter />}</>;
+  return (
+    <>
+      <DesktopFooter />
+      <MobileFooter />
+    </>
+  );
 };
 
 export default Footer;

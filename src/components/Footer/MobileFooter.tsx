@@ -9,7 +9,7 @@ const MobileFooter = () => {
       <Title size="32px" weight="400" lineHeight="36.02px">
         <span>stay connected</span>
       </Title>
-      <Socials style={{ marginTop: "35px", marginBottom: "20px" }}>
+      <Socials>
         <TwitterIcon />
         <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
           <DiscordIcon />
