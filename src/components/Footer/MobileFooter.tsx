@@ -1,14 +1,14 @@
 import { LogoIcon } from "../Icons";
 import { DiscordIcon, TwitterIcon, UnknownIcon } from "../Icons/Icons";
-import Title from "../Text/Text";
+import Text from "../Text/Text";
 import { MobileFootWrapper, Socials } from "./Style";
 
 const MobileFooter = () => {
   return (
     <MobileFootWrapper>
-      <Title size="32px" weight="400" lineHeight="36.02px">
+      <Text size="32px" weight="400" lineHeight="36.02px">
         <span>stay connected</span>
-      </Title>
+      </Text>
       <Socials>
         <TwitterIcon />
         <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
@@ -16,7 +16,7 @@ const MobileFooter = () => {
         </a>
         <UnknownIcon />
       </Socials>
-      <Title
+      <Text
         size="12px"
         weight="400"
         lineHeight="24px"
@@ -24,16 +24,16 @@ const MobileFooter = () => {
         style={{ textAlign: "left" }}
       >
         <span>connect@dmc12.com</span>
-      </Title>
-      <Title
+      </Text>
+      <Text
         size="32px"
         weight="400"
         lineHeight="36.63px"
         style={{ marginTop: "84px", marginBottom: "20px" }}
       >
         <span>DMC-12</span>
-      </Title>
-      <Title
+      </Text>
+      <Text
         size="12px"
         weight="400"
         lineHeight="24px"
@@ -41,7 +41,7 @@ const MobileFooter = () => {
         style={{ textAlign: "left", marginBottom: "50px" }}
       >
         <span>helping build web3</span>
-      </Title>
+      </Text>
       <LogoIcon width="50%" />
     </MobileFootWrapper>
   );

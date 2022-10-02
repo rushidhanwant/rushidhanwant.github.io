@@ -1,6 +1,6 @@
 import { LogoIcon } from "../Icons";
 import { DiscordIcon, TwitterIcon, UnknownIcon } from "../Icons/Icons";
-import Title from "../Text/Text";
+import Text from "../Text/Text";
 import { FootWrapper, LeftWrapper, RightWrapper, RowWrapper } from "./Style";
 
 const DesktopFooter = () => {
@@ -8,12 +8,12 @@ const DesktopFooter = () => {
     <FootWrapper>
       <LeftWrapper>
         <RowWrapper>
-          <Title size="64px" weight="400" lineHeight="73.63px">
+          <Text size="64px" weight="400" lineHeight="73.63px">
             <span>DMC-12</span>
-          </Title>
+          </Text>
           <LogoIcon />
         </RowWrapper>
-        <Title
+        <Text
           size="16px"
           weight="400"
           family="Raven Sans NBP"
@@ -21,12 +21,12 @@ const DesktopFooter = () => {
           style={{ textAlign: "left" }}
         >
           <span>helping build web3</span>
-        </Title>
+        </Text>
       </LeftWrapper>
       <RightWrapper>
-        <Title size="40px" weight="400" lineHeight="46.02px">
+        <Text size="40px" weight="400" lineHeight="46.02px">
           <span>stay connected</span>
-        </Title>
+        </Text>
         <RowWrapper>
           <TwitterIcon />
           <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
@@ -34,7 +34,7 @@ const DesktopFooter = () => {
           </a>
           <UnknownIcon />
         </RowWrapper>
-        <Title
+        <Text
           size="16px"
           weight="400"
           family="Raven Sans NBP"
@@ -42,7 +42,7 @@ const DesktopFooter = () => {
           style={{ textAlign: "left" }}
         >
           <span>connect@dmc12.com</span>
-        </Title>
+        </Text>
       </RightWrapper>
     </FootWrapper>
   );
