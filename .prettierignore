@@ -1,0 +1,6 @@
+# ignoring 
+node_modules/
+contracts/
+build
+coverage
+public
