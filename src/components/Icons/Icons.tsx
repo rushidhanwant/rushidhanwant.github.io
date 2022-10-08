@@ -2,8 +2,8 @@ import React from "react";
 import { IconProps } from "./types";
 
 const LogoIcon = ({
-  width = "186px",
-  height = "111px",
+  width = "170px",
+  height = "100px",
   classes = "",
 }: IconProps) => {
   return (
