@@ -7,8 +7,8 @@ import { NavWrapper } from "./Style";
 const Header = () => {
   const { isMobile, isLargeMobile, isTablet } = useScreenSize();
 
-  const openDiscord = () => {
-    const discord = "https://discord.gg/MdcjsePm";
+  const openMailClient = () => {
+    const discord = "mailto:hi@dmc12.com";
     window.open(discord, "_blank");
   };
 
@@ -26,13 +26,13 @@ const Header = () => {
             width="auto"
             height="auto"
             text={"Chat"}
-            onClick={openDiscord}
+            onClick={openMailClient}
           />
         ) : (
           <PrimaryButton
             width="auto"
             text={"Chat with us"}
-            onClick={openDiscord}
+            onClick={openMailClient}
           />
         )}
       </div>

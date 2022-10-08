@@ -60,7 +60,6 @@ export const RowWrapper = styled.div`
 export const MobileFootWrapper = styled.div`
   width: 100%;
   display: flex;
-  margin-bottom: 82px;
   flex-direction: column;
   align-items: center;
   text-align: center;

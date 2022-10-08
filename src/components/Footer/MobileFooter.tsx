@@ -11,9 +11,6 @@ const MobileFooter = () => {
       </Text>
       <Socials>
         <TwitterIcon />
-        <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
-          <DiscordIcon />
-        </a>
         <UnknownIcon />
       </Socials>
       <Text
@@ -23,7 +20,7 @@ const MobileFooter = () => {
         family="Raven Sans NBP"
         style={{ textAlign: "left" }}
       >
-        <span>connect@dmc12.com</span>
+        <span>hi@dmc12.com</span>
       </Text>
       <Text
         size="32px"

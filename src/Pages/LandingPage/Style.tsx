@@ -121,6 +121,16 @@ export const Row = styled.div`
       line-height: 37px;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    height: auto;
+    &:nth-child(2) > div > svg {
+      height: auto;
+    }
+    &:nth-child(2) > div > div {
+      top: 15% !important ;
+    }
+  }
 `;
 
 export const ShapeWrapper = styled.div`
@@ -132,7 +142,7 @@ export const PastWorkWrapper = styled.div`
   padding: 80px 0px;
   box-sizing: border-box;
   @media only screen and (max-width: 768px) {
-    padding: 40px 0px;
+    padding: 50px 0px;
   }
   @media only screen and (max-width: 600px) {
     & div:nth-child(1) {
@@ -175,6 +185,6 @@ export const WorkSection = styled.section`
   margin: 10px;
 `;
 export const PastWorkSection = styled.section`
-  margin: 50px 10px;
+  margin: 20px 10px 70px 10px;
   margin-bottom: 10%;
 `;
