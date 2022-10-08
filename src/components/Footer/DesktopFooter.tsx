@@ -8,7 +8,12 @@ const DesktopFooter = () => {
     <FootWrapper>
       <LeftWrapper>
         <RowWrapper>
-          <Text size="64px" weight="400" lineHeight="73.63px">
+          <Text
+            size="64px"
+            weight="400"
+            lineHeight="73.63px"
+            style={{ marginRight: "20px" }}
+          >
             <span>DMC-12</span>
           </Text>
           <LogoIcon />
@@ -29,9 +34,6 @@ const DesktopFooter = () => {
         </Text>
         <RowWrapper>
           <TwitterIcon />
-          <a href="https://discord.gg/MdcjsePm" target={"_blank"}>
-            <DiscordIcon />
-          </a>
           <UnknownIcon />
         </RowWrapper>
         <Text
@@ -41,7 +43,7 @@ const DesktopFooter = () => {
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >
-          <span>connect@dmc12.com</span>
+          <span>hi@dmc12.com</span>
         </Text>
       </RightWrapper>
     </FootWrapper>
