@@ -10,10 +10,11 @@ interface Props {
     lineHeight: string;
   };
   children: JSX.Element;
-  type: string;
+  textPosition: string;
 }
+
 const ShapeContainer = (props: Props) => {
-  const { children, Shape, TextProps, type } = props;
+  const { children, Shape, TextProps, textPosition } = props;
 
   const { size, family, weight, lineHeight } = TextProps;
   return (
@@ -27,7 +28,7 @@ const ShapeContainer = (props: Props) => {
         style={{
           position: "absolute",
           width: "100%",
-          top: type == "triangle" ? "25%" : "45%",
+          top: textPosition,
           margin: "auto",
         }}
       >

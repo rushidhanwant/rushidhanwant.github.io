@@ -9,6 +9,26 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px;
+  padding: 10px 30px;
   box-sizing: border-box;
+  @media only screen and (max-width: 780px) {
+    padding: 10px;
+  }
+`;
+
+export const MobileHeader = styled.div`
+  width: 12.7vw;
+  max-width: 170px;
+  height: auto;
+  @media only screen and (max-width: 768px) {
+    width: 66px;
+    height: 39px;
+  }
+`;
+
+export const DesktopHeader = styled.div`
+  height: 63px;
+  @media only screen and (max-width: 768px) {
+    height: auto;
+  }
 `;
