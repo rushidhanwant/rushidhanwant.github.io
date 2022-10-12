@@ -7,8 +7,7 @@ export const FootWrapper = styled.div`
   justify-content: space-between;
   text-align: left;
   margin: 20px;
-  padding: 20px;
-  padding-top: 200px;
+  padding: 200px 10px 40px 10px;
   box-sizing: border-box;
   @media only screen and (max-width: 850px) {
     display: none;

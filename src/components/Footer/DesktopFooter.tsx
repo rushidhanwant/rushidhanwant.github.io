@@ -43,7 +43,7 @@ const DesktopFooter = () => {
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >
-          <span>hi@dmc12.com</span>
+          <span>hi@dmc12.xyz</span>
         </Text>
       </RightWrapper>
     </FootWrapper>
