@@ -90,7 +90,7 @@ const LandingPage = () => {
                 weight: "400",
                 lineHeight: "41px",
               }}
-              type="circle"
+              textPosition="45%"
             >
               <span>TOKENOMICS</span>
             </ShapeContainer>
@@ -103,7 +103,7 @@ const LandingPage = () => {
                 weight: "400",
                 lineHeight: "41px",
               }}
-              type="rectangle"
+              textPosition="41%"
             >
               <span>
                 SMART <br /> CONTRACTS
@@ -118,7 +118,7 @@ const LandingPage = () => {
                 weight: "400",
                 lineHeight: "41px",
               }}
-              type="square"
+              textPosition="45%"
             >
               <span>DE-FI</span>
             </ShapeContainer>
@@ -133,7 +133,7 @@ const LandingPage = () => {
                 weight: "400",
                 lineHeight: "41px",
               }}
-              type="triangle"
+              textPosition="25%"
             >
               <span>
                 PLATFORM <br /> CONSULTING
