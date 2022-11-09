@@ -2,17 +2,17 @@ import React from "react";
 import Text from "../../components/Text/Text";
 import { Circle, Triangle, Square, Rectangle } from "../../components/Icons";
 import {
-  HeadingWrapper,
-  FunnyTextWrapper,
-  AboutTextWrapper,
-  WorkWrapper,
-  StackWrapper,
-  Row,
-  PastWorkWrapper,
-  CompanyLogo,
-  ImageContainer,
-  WorkSection,
-  PastWorkSection,
+    HeadingWrapper,
+    FunnyTextWrapper,
+    AboutTextWrapper,
+    WorkWrapper,
+    StackWrapper,
+    Row,
+    PastWorkWrapper,
+    CompanyLogo,
+    ImageContainer,
+    WorkSection,
+    PastWorkSection, BottomSectionWrapper,
 } from "./Style";
 import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
@@ -49,19 +49,17 @@ const LandingPage = () => {
             style={{}}
           >
             <span>
-              'I g-guess you guys aren't ready for that yet. But your kids are
-              gonna love it'
+
             </span>
           </Text>
         </FunnyTextWrapper>
 
         <AboutTextWrapper>
           <Text
-            size="16px"
-            family="Raven Sans NBP"
+          size="32px"
+            family="Death Star"
             weight="400"
             lineHeight="276.04%"
-            style={{}}
           >
             <span>
               DMC-12 collaborates on web3 projects and accelerates their build.
@@ -72,101 +70,102 @@ const LandingPage = () => {
           </Text>
         </AboutTextWrapper>
       </section>
+      <BottomSectionWrapper>
+          <WorkSection>
+              <WorkWrapper>
+                  <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
+                      <span>THING S WE DO</span>
+                  </Text>
+              </WorkWrapper>
 
-      <WorkSection>
-        <WorkWrapper>
-          <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
-            <span>THING S WE DO</span>
-          </Text>
-        </WorkWrapper>
+              <StackWrapper>
+                  <Row content="space-around">
+                      <ShapeContainer
+                          Shape={<Circle width="80%" />}
+                          TextProps={{
+                              size: "36px",
+                              family: "Death Star",
+                              weight: "400",
+                              lineHeight: "41px",
+                          }}
+                          textPosition="45%"
+                      >
+                          <span>TOKENOMICS</span>
+                      </ShapeContainer>
 
-        <StackWrapper>
-          <Row content="space-around">
-            <ShapeContainer
-              Shape={<Circle width="80%" />}
-              TextProps={{
-                size: "36px",
-                family: "Death Star",
-                weight: "400",
-                lineHeight: "41px",
-              }}
-              textPosition="45%"
-            >
-              <span>TOKENOMICS</span>
-            </ShapeContainer>
-
-            <ShapeContainer
-              Shape={<Rectangle width="80%" />}
-              TextProps={{
-                size: "36px",
-                family: "Death Star",
-                weight: "400",
-                lineHeight: "41px",
-              }}
-              textPosition="41%"
-            >
+                      <ShapeContainer
+                          Shape={<Rectangle width="80%" />}
+                          TextProps={{
+                              size: "36px",
+                              family: "Death Star",
+                              weight: "400",
+                              lineHeight: "41px",
+                          }}
+                          textPosition="41%"
+                      >
               <span>
                 SMART <br /> CONTRACTS
               </span>
-            </ShapeContainer>
+                      </ShapeContainer>
 
-            <ShapeContainer
-              Shape={<Square width="80%" />}
-              TextProps={{
-                size: "36px",
-                family: "Death Star",
-                weight: "400",
-                lineHeight: "41px",
-              }}
-              textPosition="45%"
-            >
-              <span>DE-FI</span>
-            </ShapeContainer>
-          </Row>
+                      <ShapeContainer
+                          Shape={<Square width="80%" />}
+                          TextProps={{
+                              size: "36px",
+                              family: "Death Star",
+                              weight: "400",
+                              lineHeight: "41px",
+                          }}
+                          textPosition="45%"
+                      >
+                          <span>DE-FI</span>
+                      </ShapeContainer>
+                  </Row>
 
-          <Row content="center">
-            <ShapeContainer
-              Shape={<Triangle width="80%" />}
-              TextProps={{
-                size: "36px",
-                family: "Death Star",
-                weight: "400",
-                lineHeight: "41px",
-              }}
-              textPosition="25%"
-            >
+                  <Row content="center">
+                      <ShapeContainer
+                          Shape={<Triangle width="80%" />}
+                          TextProps={{
+                              size: "36px",
+                              family: "Death Star",
+                              weight: "400",
+                              lineHeight: "41px",
+                          }}
+                          textPosition="25%"
+                      >
               <span>
                 PLATFORM <br /> CONSULTING
               </span>
-            </ShapeContainer>
-          </Row>
-        </StackWrapper>
-      </WorkSection>
+                      </ShapeContainer>
+                  </Row>
+              </StackWrapper>
+          </WorkSection>
 
-      <PastWorkSection>
-        <PastWorkWrapper>
-          <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
-            <span>Stuff we'’ve helped build</span>
-          </Text>
-        </PastWorkWrapper>
-        <CompanyLogo>
-          <ImageContainer>
-            <a href={"https://messari.io/"} target={"_blank"}>
-              <img src={Messari} width="100%" height="auto" />
-            </a>
-          </ImageContainer>
-          <ImageContainer>
-            <a href={"https://www.macysinc.com/"} target={"_blank"}>
-              <img src={Macys} width="100%" height="auto" />
-            </a>
-          </ImageContainer>
-          <ImageContainer>
-            <a href={"https://www.clipto.io/"} target={"_blank"}>
-              <img src={Clipto} width="50%" height="auto" />
-            </a>
-          </ImageContainer>
-        </CompanyLogo>
-      </PastWorkSection>
+          <PastWorkSection>
+              <PastWorkWrapper>
+                  <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
+                      <span>Stuff we'’ve helped build</span>
+                  </Text>
+              </PastWorkWrapper>
+              <CompanyLogo>
+                  <ImageContainer>
+                      <a href={"https://messari.io/"} target={"_blank"}>
+                          <img src={Messari} width="100%" height="auto" />
+                      </a>
+                  </ImageContainer>
+                  <ImageContainer>
+                      <a href={"https://www.macysinc.com/"} target={"_blank"}>
+                          <img src={Macys} width="100%" height="auto" />
+                      </a>
+                  </ImageContainer>
+                  <ImageContainer>
+                      <a href={"https://www.clipto.io/"} target={"_blank"}>
+                          <img src={Clipto} width="50%" height="auto" />
+                      </a>
+                  </ImageContainer>
+              </CompanyLogo>
+          </PastWorkSection>
+      </BottomSectionWrapper>
     </>
   );
 };

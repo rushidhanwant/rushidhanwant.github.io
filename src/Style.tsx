@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     overflow-x: hidden;
     background-color:#09032B;
-    background-image: url("/assets/dmc12-background.png");
+    background-image: url("/assets/1.png");
     background-repeat: no-repeat;
     background-size: cover;
 

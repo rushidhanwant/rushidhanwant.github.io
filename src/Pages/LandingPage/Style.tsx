@@ -10,6 +10,7 @@ export const HeadingWrapper = styled.div`
   flex-direction: column;
   margin: 5% 10px;
   margin-top: 0px;
+  
   @media only screen and (max-width: 600px) {
     & div:nth-child(1) {
       font-size: 40px;
@@ -23,7 +24,7 @@ export const HeadingWrapper = styled.div`
 `;
 
 export const FunnyTextWrapper = styled.div`
-  margin:10px;
+  margin:10px 0px;
   padding:15px;
   margin-top: 88%;
   & div {
@@ -47,9 +48,19 @@ export const FunnyTextWrapper = styled.div`
 `;
 
 export const AboutTextWrapper = styled.div`
-  margin: 10px;
-  padding: 15px;
-  margin-top: 15%;
+  padding:54px 0;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color:#09032B;
+  background-image: url("/assets/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  @media only screen and (max-width: 768px){
+    background-image: url("/assets/2.png");
+    background-position: center top 0px;
+  }
   & div {
     width: 80%;
     margin: auto;
@@ -187,4 +198,11 @@ export const WorkSection = styled.section`
 export const PastWorkSection = styled.section`
   margin: 20px 10px 70px 10px;
   margin-bottom: 10%;
+`;
+export const BottomSectionWrapper = styled.div`
+  overflow-y: hidden;
+  background-color:#09032B;
+  background-image: url("/assets/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
