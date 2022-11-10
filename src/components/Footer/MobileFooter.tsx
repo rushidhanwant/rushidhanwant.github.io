@@ -10,7 +10,7 @@ const MobileFooter = () => {
         <span>stay connected</span>
       </Text>
       <Socials>
-          <a>
+          <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank">
         <TwitterIcon /></a>
         <UnknownIcon />
       </Socials>
