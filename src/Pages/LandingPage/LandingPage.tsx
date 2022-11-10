@@ -53,7 +53,10 @@ const LandingPage = () => {
             </span>
           </Text>
         </FunnyTextWrapper>
-
+          <hr style={{
+              border: "15px solid #8EC8D5B2",
+              margin: 0
+          }}/>
         <AboutTextWrapper>
           <Text
           size="32px"
@@ -69,6 +72,10 @@ const LandingPage = () => {
             </span>
           </Text>
         </AboutTextWrapper>
+          <hr style={{
+              border: "15px solid #8EC8D5B2",
+              margin:0
+          }}/>
       </section>
       <BottomSectionWrapper>
           <WorkSection>

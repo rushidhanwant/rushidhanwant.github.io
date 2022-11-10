@@ -10,7 +10,8 @@ const MobileFooter = () => {
         <span>stay connected</span>
       </Text>
       <Socials>
-        <TwitterIcon />
+          <a>
+        <TwitterIcon /></a>
         <UnknownIcon />
       </Socials>
       <Text
@@ -20,7 +21,7 @@ const MobileFooter = () => {
         family="Raven Sans NBP"
         style={{ textAlign: "left" }}
       >
-        <span>hi@dmc12.xyz</span>
+        <span>hello@dmc12.xyz</span>
       </Text>
       <Text
         size="32px"

@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     background-image: url("/assets/1.png");
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center top;
     @media only screen and (max-width: 768px){
       background-image: url("/assets/dmc12-background-mobile.png");
       background-position: center top 0px;
