@@ -14,7 +14,7 @@ export const StyledPrimaryButton = styled.button`
   font-family: "Death Star";
   letter-spacing: 0.05em;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 0;
   background-color: rgba(255, 255, 255, .2);
   border-radius: 28px;
@@ -23,7 +23,7 @@ export const StyledPrimaryButton = styled.button`
     border: 2px solid #ffffff;
   }
   @media only screen and (max-width: 768px) {
-    font-size: 8px;
+    font-size: 1rem;
     line-height: 0px;
     border: 2px solid #ffffff;
   }
