@@ -33,7 +33,7 @@ const DesktopFooter = () => {
           <span>stay connected</span>
         </Text>
         <RowWrapper>
-          <TwitterIcon />
+          <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank"><TwitterIcon /></a>
           <UnknownIcon />
         </RowWrapper>
         <Text
@@ -43,7 +43,7 @@ const DesktopFooter = () => {
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >
-          <span>hi@dmc12.xyz</span>
+          <span>hello@dmc12.xyz</span>
         </Text>
       </RightWrapper>
     </FootWrapper>

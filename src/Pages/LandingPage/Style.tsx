@@ -52,13 +52,14 @@ export const AboutTextWrapper = styled.div`
   width:100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color:#09032B;
-  background-image: url("/assets/2.png");
+  background-color:#09042C;
+  //background-image: url("/assets/2.png");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   @media only screen and (max-width: 768px){
-    background-image: url("/assets/2.png");
+    //background-image: url("/assets/2.png");
+    background-color:#09042C;
     background-position: center top 0px;
   }
   & div {

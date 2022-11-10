@@ -8,7 +8,7 @@ const Header = () => {
   const { isMobile, isLargeMobile, isTablet } = useScreenSize();
 
   const openMailClient = () => {
-    const discord = "mailto:hi@dmc12.xyz";
+    const discord = "mailto:hello@dmc12.xyz";
     window.open(discord, "_blank");
   };
 

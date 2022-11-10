@@ -6,16 +6,17 @@ export const StyledPrimaryButton = styled.button`
   box-sizing: border-box;
   width: ${(props: ButtonProps) => props.width || "224px"};
   height: ${(props: ButtonProps) => props.height || "63px"};
-  border: 3px solid #ffffff;
+  border: 4px solid #ffffff;
   cursor: pointer;
   color: white;
   font-style: normal;
   text-align: center;
-  font-family: "Raven Sans NBP";
+  font-family: "Death Star";
+  letter-spacing: 0.05em;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 0px;
-  background-color: transparent;
+  font-size: 32px;
+  line-height: 0;
+  background-color: rgba(255, 255, 255, .2);
   border-radius: 28px;
   padding: 20px;
   &:hover {
