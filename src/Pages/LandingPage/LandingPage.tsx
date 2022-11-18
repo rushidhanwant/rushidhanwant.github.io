@@ -12,7 +12,7 @@ import {
     CompanyLogo,
     ImageContainer,
     WorkSection,
-    PastWorkSection, BottomSectionWrapper,
+    PastWorkSection, BottomSectionWrapper, LandingPageHr,
 } from "./Style";
 import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
@@ -53,10 +53,10 @@ const LandingPage = () => {
             </span>
           </Text>
         </FunnyTextWrapper>
-          <hr style={{
+          <LandingPageHr><hr style={{
               border: "15px solid #8EC8D5B2",
               margin: 0
-          }}/>
+          }}/></LandingPageHr>
         <AboutTextWrapper>
           <Text
           size="32px"
@@ -72,10 +72,10 @@ const LandingPage = () => {
             </span>
           </Text>
         </AboutTextWrapper>
-          <hr style={{
+          <LandingPageHr><hr style={{
               border: "15px solid #8EC8D5B2",
               margin:0
-          }}/>
+          }}/></LandingPageHr>
       </section>
       <BottomSectionWrapper>
           <WorkSection>
