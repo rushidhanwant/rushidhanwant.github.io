@@ -57,7 +57,13 @@ export const AboutTextWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  @media only screen and (max-width: 768px){
+  font-family: "Death Star";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  @media only screen and (max-width: 900px){
     //background-image: url("/assets/2.png");
     background-color:#09042C;
     background-position: center top 0px;
@@ -77,8 +83,12 @@ export const AboutTextWrapper = styled.div`
       width: 100%;
     }
     & div:nth-child(1) {
+      font-family: Raven Sans NBP;
       font-size: 10px;
-      line-height: 276.04%;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: center;
     }
   }
 `;
@@ -206,4 +216,9 @@ export const BottomSectionWrapper = styled.div`
   background-image: url("/assets/3.png");
   background-repeat: no-repeat;
   background-size: cover;
+`;
+export const LandingPageHr = styled.div`
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;
