@@ -80,7 +80,7 @@ export const AboutTextWrapper = styled.div`
   @media only screen and (max-width: 600px) {
     margin-top: 20%;
     & div {
-      width: 100%;
+      width: 80%;
     }
     & div:nth-child(1) {
       font-family: Raven Sans NBP;
