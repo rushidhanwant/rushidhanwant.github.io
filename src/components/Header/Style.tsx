@@ -31,6 +31,6 @@ export const DesktopHeader = styled.div`
   gap: 20px;
   height: 63px;
   @media only screen and (max-width: 768px) {
-    height: auto;
+    display: none;
   }
 `;

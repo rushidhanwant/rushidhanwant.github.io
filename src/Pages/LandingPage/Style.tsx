@@ -13,6 +13,7 @@ export const HeadingWrapper = styled.div`
   
   @media only screen and (max-width: 600px) {
     & div:nth-child(1) {
+      margin: 80% 10px;
       font-size: 40px;
       line-height: 46px;
     }
@@ -32,7 +33,7 @@ export const FunnyTextWrapper = styled.div`
      margin: auto; 
   }
   @media only screen and (max-width: 768px) {
-    margin-top: 110%;
+    margin-top: 0;
     & div {
       width: 100%;
     }
@@ -64,7 +65,7 @@ export const AboutTextWrapper = styled.div`
   text-align: center;
   @media only screen and (max-width: 900px){
     //background-image: url("/assets/2.png");
-    background-color:#09042C;
+    background-color:#040217;
     background-position: center top 0px;
   }
   & div {
@@ -77,7 +78,7 @@ export const AboutTextWrapper = styled.div`
     }
   }
   @media only screen and (max-width: 600px) {
-    margin-top: 20%;
+    margin-top: 10%;
     & div {
       width: 80%;
     }
@@ -186,6 +187,10 @@ export const CollaborationWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 14px;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
 `;
 
 export const CompanyLogo = styled.div`
@@ -232,7 +237,12 @@ export const TechStackSection = styled(PastWorkSection)`
   margin-bottom: 5%;
 `;
 
-export const ProjectSection = styled(PastWorkSection)``;
+export const ProjectSection = styled(PastWorkSection)`
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export const WorkflowSection = styled.div`
   background-image: url("/assets/workflow-background.png");
