@@ -19,6 +19,7 @@ import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 import Messari from "../../components/Icons/Messari.png";
 import Clipto from "../../components/Icons/Clipto.png";
 import Macys from "../../components/Icons/Macys.png";
+import DevNode from "../../components/Icons/DevNode.png";
 
 const LandingPage = () => {
   return (
@@ -161,14 +162,19 @@ const LandingPage = () => {
                       </a>
                   </ImageContainer>
                   <ImageContainer>
-                      <a href={"https://www.macysinc.com/"} target={"_blank"}>
-                          <img src={Macys} width="100%" height="auto" />
-                      </a>
+                    <a href={"https://devnode.network/"} target={"_blank"}>
+                      <img src={DevNode} width="60%" height="auto" />
+                    </a>
                   </ImageContainer>
                   <ImageContainer>
                       <a href={"https://www.clipto.io/"} target={"_blank"}>
                           <img src={Clipto} width="50%" height="auto" />
                       </a>
+                  </ImageContainer>
+                  <ImageContainer>
+                    <a href={"https://www.macysinc.com/"} target={"_blank"}>
+                      <img src={Macys} width="100%" height="auto" />
+                    </a>
                   </ImageContainer>
               </CompanyLogo>
           </PastWorkSection>
