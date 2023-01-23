@@ -24,10 +24,6 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
   }
-  
-  .font-advent {
-    font-family: 'Advent Pro', sans-serif;
-  }
 `;
 
 export const AppWrapper = styled.div`

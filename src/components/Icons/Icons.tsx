@@ -5,12 +5,15 @@ const LogoIcon = ({
   width = "170px",
   height = "100px",
   classes = "",
+  onClick,
 }: IconProps) => {
   return (
       <svg
           className={classes}
           width={width}
           height={height}
+          onClick={onClick}
+          style={{ cursor: "pointer" }}
           viewBox="0 0 191 114"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

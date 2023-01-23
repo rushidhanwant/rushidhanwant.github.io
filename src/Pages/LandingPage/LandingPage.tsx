@@ -1,17 +1,13 @@
 import React from "react";
 import Text from "../../components/Text/Text";
-import {Circle, Triangle, Square, Rectangle, ThunderIcon, MailIcon, CheckIcon} from "../../components/Icons";
+import {ThunderIcon, MailIcon, CheckIcon} from "../../components/Icons";
 import {
   HeadingWrapper,
   FunnyTextWrapper,
   AboutTextWrapper,
-  WorkWrapper,
-  StackWrapper,
-  Row,
   PastWorkWrapper,
   CompanyLogo,
   ImageContainer,
-  WorkSection,
   PastWorkSection,
   BottomSectionWrapper,
   TechStackSection,
@@ -20,7 +16,6 @@ import {
   WorkFlowWrapper,
   CollaborationWrapper, ProjectSection, ProjectWrapper, ProjectListContainer, ProjectContainer, ImageHolder,
 } from "./Style";
-import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
 import Messari from "../../components/Icons/Messari.png";
 import Clipto from "../../components/Icons/Clipto.png";
@@ -34,8 +29,19 @@ import Ceramic from "../../components/Icons/Ceramic.png";
 import Typescript from "../../components/Icons/Typescript.png";
 import {CollabCard} from "../../components/Cards/CollabCard";
 import {ProjectCard} from "../../components/Cards/ProjectCard";
+import {useNavigate} from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate()
+
+  const redirectToDevnode = () => {
+    navigate("/devnode", { replace: true });
+  }
+
+  const redirectToClipto = () => {
+    navigate("/clipto");
+  }
+
   return (
     <>
       <section>
@@ -125,7 +131,7 @@ const LandingPage = () => {
               <ImageHolder style={{ backgroundImage: "url('/assets/devnode-screenshot.png')",  backgroundSize: "cover"}}>
                   <div style={{ position: "absolute", bottom: 20, right: 20}}>
                     <ProjectCard
-                      onClick={() => {}}
+                      onClick={redirectToDevnode}
                       backgroundColor={"#000000"}
                       heading={"GROWING DEVELOPER ECOSYSTEMS"}
                       title={"Devnode"} />
@@ -178,7 +184,7 @@ const LandingPage = () => {
               <ImageHolder style={{ backgroundImage: "url('/assets/clipto-screenshot.png')",  backgroundSize: "cover"}}>
                 <div style={{ position: "absolute", bottom: 20, right: 20}}>
                   <ProjectCard
-                    onClick={() => {}}
+                    onClick={redirectToClipto}
                     backgroundColor={"#2C1340"}
                     heading={"NFT MARKET DEVELOPMENT "}
                     title={"CLIPTO"} />

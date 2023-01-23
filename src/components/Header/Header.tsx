@@ -2,8 +2,11 @@ import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import {ChatIcon, GithubIcon, LogoIcon} from "../Icons";
 import { NavWrapper, MobileHeader, DesktopHeader } from "./Style";
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const openMailClient = () => {
     const discord = "mailto:hello@dmc12.xyz";
     window.open(discord, "_blank");
@@ -16,10 +19,15 @@ const Header = () => {
 
   const openForm = () => {}
 
+  const redirectToHome = () => {
+    console.log("here");
+    navigate("/");
+  }
+
   return (
     <NavWrapper>
       <MobileHeader>
-        <LogoIcon width="inherit" height="inherit" />
+        <LogoIcon onClick={redirectToHome} width="inherit" height="inherit" />
       </MobileHeader>
       <DesktopHeader>
         <PrimaryButton
