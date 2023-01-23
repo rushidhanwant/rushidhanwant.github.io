@@ -2,17 +2,17 @@ import React from "react";
 import Text from "../../components/Text/Text";
 import { Circle, Triangle, Square, Rectangle } from "../../components/Icons";
 import {
-    HeadingWrapper,
-    FunnyTextWrapper,
-    AboutTextWrapper,
-    WorkWrapper,
-    StackWrapper,
-    Row,
-    PastWorkWrapper,
-    CompanyLogo,
-    ImageContainer,
-    WorkSection,
-    PastWorkSection, BottomSectionWrapper, LandingPageHr,
+  HeadingWrapper,
+  FunnyTextWrapper,
+  AboutTextWrapper,
+  WorkWrapper,
+  StackWrapper,
+  Row,
+  PastWorkWrapper,
+  CompanyLogo,
+  ImageContainer,
+  WorkSection,
+  PastWorkSection, BottomSectionWrapper, TechStackSection, TechStackWrapper,
 } from "./Style";
 import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
@@ -21,21 +21,19 @@ import Clipto from "../../components/Icons/Clipto.png";
 import Macys from "../../components/Icons/Macys.png";
 import DevNode from "../../components/Icons/DevNode.png";
 
+import Solidity from "../../components/Icons/Solidity.png";
+import Rust from "../../components/Icons/Rust.png";
+import Polygon from "../../components/Icons/Polygon.png";
+import Ceramic from "../../components/Icons/Ceramic.png";
+import Typescript from "../../components/Icons/Typescript.png";
+
 const LandingPage = () => {
   return (
     <>
       <section>
         <HeadingWrapper>
-          <Text size="7vw" family="Death Star" weight="400" lineHeight="8vw">
+          <Text size="7vw" family="Death Star" weight="400" lineHeight="80vw">
             <span>HEY, WE'RE DMC-12</span>
-          </Text>
-          <Text
-            size="1.4vw"
-            family="Raven Sans NBP"
-            weight="400"
-            lineHeight="2.8vw"
-          >
-            <span>WE’RE HELPING BUILD WEB3</span>
           </Text>
         </HeadingWrapper>
       </section>
@@ -54,29 +52,20 @@ const LandingPage = () => {
             </span>
           </Text>
         </FunnyTextWrapper>
-          <LandingPageHr><hr style={{
-              border: "15px solid #8EC8D5B2",
-              margin: 0
-          }}/></LandingPageHr>
         <AboutTextWrapper>
           <Text
-          size="32px"
-            family="Death Star"
-            weight="400"
+            size="40px"
+            family="Advent Pro"
+            weight="700"
             lineHeight="276.04%"
           >
             <span>
-              DMC-12 collaborates on web3 projects and accelerates their build.
-              Whether you're just starting, have built something sweet in web3
-              and need some skilful input, or want someone to bounce ideas off,
-              you can speak to us.
+              DMC-12 is a collective of software engineers and product heads that provide founders and
+              organisations with professional services for web3 application designs, development,
+              NFT projects, DAO tooling, and loads more.
             </span>
           </Text>
         </AboutTextWrapper>
-          <LandingPageHr><hr style={{
-              border: "15px solid #8EC8D5B2",
-              margin:0
-          }}/></LandingPageHr>
       </section>
       <BottomSectionWrapper>
           <WorkSection>
@@ -148,6 +137,31 @@ const LandingPage = () => {
                   </Row>
               </StackWrapper>
           </WorkSection>
+
+          <TechStackSection>
+            <TechStackWrapper>
+              <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
+                <span>Tech Stack</span>
+              </Text>
+            </TechStackWrapper>
+            <CompanyLogo>
+              <ImageContainer>
+                <img src={Solidity} width="50%" height="auto" />
+              </ImageContainer>
+              <ImageContainer>
+                <img src={Rust} width="100%" height="auto" />
+              </ImageContainer>
+              <ImageContainer>
+                <img src={Typescript} width="50%" height="auto" />
+              </ImageContainer>
+              <ImageContainer>
+                <img src={Polygon} width="50%" height="auto" />
+              </ImageContainer>
+              <ImageContainer>
+                <img src={Ceramic} width="50%" height="auto" />
+              </ImageContainer>
+            </CompanyLogo>
+          </TechStackSection>
 
           <PastWorkSection>
               <PastWorkWrapper>

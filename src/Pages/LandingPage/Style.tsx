@@ -26,7 +26,7 @@ export const HeadingWrapper = styled.div`
 export const FunnyTextWrapper = styled.div`
   margin:10px 0px;
   padding:15px;
-  margin-top: 88%;
+  margin-top: 10%;
   & div {
     width: 80%;
      margin: auto; 
@@ -52,12 +52,11 @@ export const AboutTextWrapper = styled.div`
   width:100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color:#09042C;
+  background-color:#050216;
   //background-image: url("/assets/2.png");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  font-family: "Death Star";
   font-size: 32px;
   font-weight: 400;
   line-height: 28px;
@@ -174,6 +173,10 @@ export const PastWorkWrapper = styled.div`
   }
 `;
 
+export const TechStackWrapper = styled(PastWorkWrapper)`
+
+`;
+
 export const CompanyLogo = styled.div`
   margin: 10px auto;
   display: flex;
@@ -213,6 +216,11 @@ export const PastWorkSection = styled.section`
   margin: 20px 10px 70px 10px;
   margin-bottom: 10%;
 `;
+
+export const TechStackSection = styled(PastWorkSection)`
+  margin-bottom: 5%;
+`;
+
 export const BottomSectionWrapper = styled.div`
   overflow-y: hidden;
   background-color:#09032B;
