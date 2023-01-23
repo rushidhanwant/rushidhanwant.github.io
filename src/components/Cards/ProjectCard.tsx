@@ -37,7 +37,7 @@ const ProjectCard = ({ backgroundColor, heading, title, onClick }: ProjectCardPr
           style={{ textAlign: "right", marginTop: "50px", cursor: "pointer" }}
         >
               <span>
-                View project ->
+                {"View project ->"}
               </span>
         </Text>
         </div>

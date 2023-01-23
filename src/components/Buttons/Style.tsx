@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonProps } from "./types";
 
 export const StyledPrimaryButton = styled.button`
   display: flex;

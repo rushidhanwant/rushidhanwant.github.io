@@ -8,6 +8,6 @@ export interface CollabCardProps {
 export interface ProjectCardProps {
   backgroundColor: string;
   heading: string;
-  title: tring;
+  title: string;
   onClick: any;
 }

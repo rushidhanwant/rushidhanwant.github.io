@@ -1,9 +1,4 @@
-export interface ButtonProps {
-  width?: string;
-  height?: string;
-}
-
-export interface PrimaryButtonProps extends ButtonProps {
+export interface PrimaryButtonProps {
   text: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 

@@ -1,9 +1,9 @@
 import React from "react";
 import Text from "../../components/Text/Text";
 import {Description, ImagesWrapper, ParagraphWrapper} from "./Style";
-import {ProjectPageProps} from "./types";
+import {ProjectPageProps, ParagraphProps} from "./types";
 
-const Paragraph = ({ title, description }) => {
+const Paragraph = ({ title, description }: ParagraphProps) => {
   return (
     <div>
       <Text size="40px" family="Advent Pro" weight="700" lineHeight="101px">

@@ -31,21 +31,15 @@ const Header = () => {
       </MobileHeader>
       <DesktopHeader>
         <PrimaryButton
-          width="inherit"
-          height="inherit"
           text={"Submit a form"}
           onClick={openForm}
         />
         <PrimaryButton
-          width="inherit"
-          height="inherit"
           text={"Our Github"}
           onClick={openGithub}
           icon={<GithubIcon width={"35px"} height={"35px"} />}
         />
         <PrimaryButton
-          width="inherit"
-          height="inherit"
           text={"Build with us"}
           onClick={openMailClient}
           icon={<ChatIcon width={"35px"} height={"35px"} />}
