@@ -52,7 +52,7 @@ export const AboutTextWrapper = styled.div`
   width:100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color:#050216;
+  background-color:#040217;
   //background-image: url("/assets/2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,8 +173,19 @@ export const PastWorkWrapper = styled.div`
   }
 `;
 
-export const TechStackWrapper = styled(PastWorkWrapper)`
+export const TechStackWrapper = styled(PastWorkWrapper)``;
 
+export const WorkFlowWrapper = styled(PastWorkWrapper)``;
+
+export const ProjectWrapper = styled(PastWorkWrapper)``;
+
+export const CollaborationWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
 `;
 
 export const CompanyLogo = styled.div`
@@ -221,13 +232,52 @@ export const TechStackSection = styled(PastWorkSection)`
   margin-bottom: 5%;
 `;
 
-export const BottomSectionWrapper = styled.div`
-  overflow-y: hidden;
-  background-color:#09032B;
-  background-image: url("/assets/3.png");
+export const ProjectSection = styled(PastWorkSection)``;
+
+export const WorkflowSection = styled.div`
+  background-image: url("/assets/workflow-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 257px;
 `;
+
+export const BottomSectionWrapper = styled.div`
+  overflow-y: hidden;
+`;
+
+export const ProjectListContainer = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 200px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin: 0 85px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ImageHolder = styled.div`
+  width: 588px;
+  height: 381px;
+  position: relative;
+  background-color: #040217;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  border: 2px solid rgba(254, 254, 254, 0.6);
+  box-shadow: 0px 4px 62px 11px rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+`;
+
 export const LandingPageHr = styled.div`
   @media only screen and (max-width: 900px) {
     display: none;

@@ -5,3 +5,6 @@ export { Square } from "./Square";
 export { Rectangle } from "./Rectangle";
 export { GithubIcon } from "./Github";
 export { ChatIcon } from "./ChatIcon";
+export { ThunderIcon } from "./ThunderIcon";
+export { MailIcon } from "./MailIcon";
+export { CheckIcon } from "./CheckIcon";

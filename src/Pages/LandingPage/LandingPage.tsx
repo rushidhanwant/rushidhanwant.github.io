@@ -1,6 +1,6 @@
 import React from "react";
 import Text from "../../components/Text/Text";
-import { Circle, Triangle, Square, Rectangle } from "../../components/Icons";
+import {Circle, Triangle, Square, Rectangle, ThunderIcon, MailIcon, CheckIcon} from "../../components/Icons";
 import {
   HeadingWrapper,
   FunnyTextWrapper,
@@ -12,7 +12,13 @@ import {
   CompanyLogo,
   ImageContainer,
   WorkSection,
-  PastWorkSection, BottomSectionWrapper, TechStackSection, TechStackWrapper,
+  PastWorkSection,
+  BottomSectionWrapper,
+  TechStackSection,
+  TechStackWrapper,
+  WorkflowSection,
+  WorkFlowWrapper,
+  CollaborationWrapper, ProjectSection, ProjectWrapper, ProjectListContainer, ProjectContainer, ImageHolder,
 } from "./Style";
 import ShapeContainer from "../../components/ShapeContainer/ShapeContainer";
 
@@ -26,13 +32,15 @@ import Rust from "../../components/Icons/Rust.png";
 import Polygon from "../../components/Icons/Polygon.png";
 import Ceramic from "../../components/Icons/Ceramic.png";
 import Typescript from "../../components/Icons/Typescript.png";
+import {CollabCard} from "../../components/Cards/CollabCard";
+import {ProjectCard} from "../../components/Cards/ProjectCard";
 
 const LandingPage = () => {
   return (
     <>
       <section>
         <HeadingWrapper>
-          <Text size="7vw" family="Death Star" weight="400" lineHeight="80vw">
+          <Text size="7vw" family="Death Star" weight="400" lineHeight="85vw">
             <span>HEY, WE'RE DMC-12</span>
           </Text>
         </HeadingWrapper>
@@ -68,130 +76,174 @@ const LandingPage = () => {
         </AboutTextWrapper>
       </section>
       <BottomSectionWrapper>
-          <WorkSection>
-              <WorkWrapper>
-                  <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
-                      <span>THING S WE DO</span>
-                  </Text>
-              </WorkWrapper>
+        <WorkflowSection>
+          <WorkFlowWrapper>
+            <Text size="48px" family="Death Star" weight="400" lineHeight="55px" style={{ marginTop: "100px" }}>
+              <span>Workflow</span>
+            </Text>
+            <Text
+              size="40px"
+              family="Advent Pro"
+              weight="700"
+              lineHeight="276.04%"
+              style={{ marginTop: "83px" }}
+            >
+              <span>Collaboration is straightforward and easy:</span>
+            </Text>
+          </WorkFlowWrapper>
+          <CollaborationWrapper>
+            <CollabCard icon={<ThunderIcon />} text={"Submit a project brief"} />
+            <CollabCard icon={<MailIcon />} text={"Receive a proposal from our experienced team"} />
+            <CollabCard icon={<CheckIcon />} text={"Review, agree, and pay as we complete your project"} />
+          </CollaborationWrapper>
 
-              <StackWrapper>
-                  <Row content="space-around">
-                      <ShapeContainer
-                          Shape={<Circle width="80%" />}
-                          TextProps={{
-                              size: "36px",
-                              family: "Death Star",
-                              weight: "400",
-                              lineHeight: "41px",
-                          }}
-                          textPosition="45%"
-                      >
-                          <span>TOKENOMICS</span>
-                      </ShapeContainer>
+        </WorkflowSection>
 
-                      <ShapeContainer
-                          Shape={<Rectangle width="80%" />}
-                          TextProps={{
-                              size: "36px",
-                              family: "Death Star",
-                              weight: "400",
-                              lineHeight: "41px",
-                          }}
-                          textPosition="41%"
-                      >
+        <ProjectSection>
+          <ProjectWrapper>
+            <Text size="48px" family="Death Star" weight="400" lineHeight="55px" style={{ marginTop: "100px" }}>
+              <span>Build fast with dmc-12</span>
+            </Text>
+          </ProjectWrapper>
+          <AboutTextWrapper>
+            <Text
+              size="40px"
+              family="Advent Pro"
+              weight="700"
+              lineHeight="200.04%"
+            >
               <span>
-                SMART <br /> CONTRACTS
+                Over the years we’ve developed building styles that are high quality and rapid.
+                From dynamic interfaces to scalable backends, we provide high quality execution at every step.
+                Here’s a snapshot of our problem solving skills.
               </span>
-                      </ShapeContainer>
+            </Text>
+          </AboutTextWrapper>
 
-                      <ShapeContainer
-                          Shape={<Square width="80%" />}
-                          TextProps={{
-                              size: "36px",
-                              family: "Death Star",
-                              weight: "400",
-                              lineHeight: "41px",
-                          }}
-                          textPosition="45%"
-                      >
-                          <span>DE-FI</span>
-                      </ShapeContainer>
-                  </Row>
-
-                  <Row content="center">
-                      <ShapeContainer
-                          Shape={<Triangle width="80%" />}
-                          TextProps={{
-                              size: "36px",
-                              family: "Death Star",
-                              weight: "400",
-                              lineHeight: "41px",
-                          }}
-                          textPosition="25%"
-                      >
+          <ProjectListContainer>
+            <ProjectContainer>
+              <ImageHolder style={{ backgroundImage: "url('/assets/devnode-screenshot.png')",  backgroundSize: "cover"}}>
+                  <div style={{ position: "absolute", bottom: 20, right: 20}}>
+                    <ProjectCard
+                      onClick={() => {}}
+                      backgroundColor={"#000000"}
+                      heading={"GROWING DEVELOPER ECOSYSTEMS"}
+                      title={"Devnode"} />
+                  </div>
+              </ImageHolder>
+              <div style={{ width: "588px", textAlign: "left" }}>
+                <Text
+                  size="24px"
+                  family="Inter"
+                  weight="700"
+                  lineHeight={"29px"}
+                >
+                  <span>GROWING DEVELOPER ECOSYSTEMS</span>
+                </Text>
+                <Text
+                  size="32px"
+                  family="Advent Pro"
+                  weight="700"
+                  lineHeight={"38px"}
+                  style={{ marginTop: "40px" }}
+                >
               <span>
-                PLATFORM <br /> CONSULTING
+                Rapid prototype development. Test your web3 infrastructure ideas and then scale
               </span>
-                      </ShapeContainer>
-                  </Row>
-              </StackWrapper>
-          </WorkSection>
+                </Text>
+              </div>
+            </ProjectContainer>
+            <ProjectContainer>
+              <div style={{ width: "588px", textAlign: "left" }}>
+                <Text
+                  size="24px"
+                  family="Inter"
+                  weight="700"
+                  lineHeight={"29px"}
+                >
+                  <span>NFT MARKET DEVELOPMENT </span>
+                </Text>
+                <Text
+                  size="32px"
+                  family="Advent Pro"
+                  weight="700"
+                  lineHeight={"38px"}
+                  style={{ marginTop: "40px" }}
+                >
+              <span>
+                Go from 0 to 1. Build an NFT marketplace that creators and fans love
+              </span>
+                </Text>
+              </div>
+              <ImageHolder style={{ backgroundImage: "url('/assets/clipto-screenshot.png')",  backgroundSize: "cover"}}>
+                <div style={{ position: "absolute", bottom: 20, right: 20}}>
+                  <ProjectCard
+                    onClick={() => {}}
+                    backgroundColor={"#2C1340"}
+                    heading={"NFT MARKET DEVELOPMENT "}
+                    title={"CLIPTO"} />
+                </div>
+              </ImageHolder>
+            </ProjectContainer>
 
-          <TechStackSection>
-            <TechStackWrapper>
-              <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
-                <span>Tech Stack</span>
-              </Text>
-            </TechStackWrapper>
+          </ProjectListContainer>
+
+        </ProjectSection>
+
+        <TechStackSection>
+          <TechStackWrapper>
+            <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
+              <span>Tech Stack</span>
+            </Text>
+          </TechStackWrapper>
+          <CompanyLogo>
+            <ImageContainer>
+              <img src={Solidity} width="50%" height="auto" />
+            </ImageContainer>
+            <ImageContainer>
+              <img src={Rust} width="100%" height="auto" />
+            </ImageContainer>
+            <ImageContainer>
+              <img src={Typescript} width="50%" height="auto" />
+            </ImageContainer>
+            <ImageContainer>
+              <img src={Polygon} width="50%" height="auto" />
+            </ImageContainer>
+            <ImageContainer>
+              <img src={Ceramic} width="50%" height="auto" />
+            </ImageContainer>
+          </CompanyLogo>
+        </TechStackSection>
+
+        <PastWorkSection>
+            <PastWorkWrapper>
+                <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
+                    <span>Stuff we'’ve helped build</span>
+                </Text>
+            </PastWorkWrapper>
             <CompanyLogo>
-              <ImageContainer>
-                <img src={Solidity} width="50%" height="auto" />
-              </ImageContainer>
-              <ImageContainer>
-                <img src={Rust} width="100%" height="auto" />
-              </ImageContainer>
-              <ImageContainer>
-                <img src={Typescript} width="50%" height="auto" />
-              </ImageContainer>
-              <ImageContainer>
-                <img src={Polygon} width="50%" height="auto" />
-              </ImageContainer>
-              <ImageContainer>
-                <img src={Ceramic} width="50%" height="auto" />
-              </ImageContainer>
+                <ImageContainer>
+                    <a href={"https://messari.io/"} target={"_blank"}>
+                        <img src={Messari} width="100%" height="auto" />
+                    </a>
+                </ImageContainer>
+                <ImageContainer>
+                  <a href={"https://devnode.network/"} target={"_blank"}>
+                    <img src={DevNode} width="60%" height="auto" />
+                  </a>
+                </ImageContainer>
+                <ImageContainer>
+                    <a href={"https://www.clipto.io/"} target={"_blank"}>
+                        <img src={Clipto} width="50%" height="auto" />
+                    </a>
+                </ImageContainer>
+                <ImageContainer>
+                  <a href={"https://www.macysinc.com/"} target={"_blank"}>
+                    <img src={Macys} width="100%" height="auto" />
+                  </a>
+                </ImageContainer>
             </CompanyLogo>
-          </TechStackSection>
-
-          <PastWorkSection>
-              <PastWorkWrapper>
-                  <Text size="48px" family="Death Star" weight="400" lineHeight="55px">
-                      <span>Stuff we'’ve helped build</span>
-                  </Text>
-              </PastWorkWrapper>
-              <CompanyLogo>
-                  <ImageContainer>
-                      <a href={"https://messari.io/"} target={"_blank"}>
-                          <img src={Messari} width="100%" height="auto" />
-                      </a>
-                  </ImageContainer>
-                  <ImageContainer>
-                    <a href={"https://devnode.network/"} target={"_blank"}>
-                      <img src={DevNode} width="60%" height="auto" />
-                    </a>
-                  </ImageContainer>
-                  <ImageContainer>
-                      <a href={"https://www.clipto.io/"} target={"_blank"}>
-                          <img src={Clipto} width="50%" height="auto" />
-                      </a>
-                  </ImageContainer>
-                  <ImageContainer>
-                    <a href={"https://www.macysinc.com/"} target={"_blank"}>
-                      <img src={Macys} width="100%" height="auto" />
-                    </a>
-                  </ImageContainer>
-              </CompanyLogo>
-          </PastWorkSection>
+        </PastWorkSection>
       </BottomSectionWrapper>
     </>
   );

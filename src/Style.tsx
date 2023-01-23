@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     overflow-x: hidden;
-    background-color:black;
+    background-color: #040217;
     background-image: url("/assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
