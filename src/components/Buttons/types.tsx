@@ -6,4 +6,6 @@ export interface ButtonProps {
 export interface PrimaryButtonProps extends ButtonProps {
   text: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+
+  icon?: any;
 }

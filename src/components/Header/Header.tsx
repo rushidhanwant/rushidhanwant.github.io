@@ -1,28 +1,46 @@
 import React from "react";
-import { useScreenSize } from "../../hooks";
 import PrimaryButton from "../Buttons/PrimaryButton";
-import { LogoIcon } from "../Icons";
+import {ChatIcon, GithubIcon, LogoIcon} from "../Icons";
 import { NavWrapper, MobileHeader, DesktopHeader } from "./Style";
 
 const Header = () => {
-  const { isMobile, isLargeMobile, isTablet } = useScreenSize();
-
   const openMailClient = () => {
     const discord = "mailto:hello@dmc12.xyz";
     window.open(discord, "_blank");
   };
 
+  const openGithub = () => {
+    const github = "https://github.com/dmc12-xyz";
+    window.open(github, "_blank");
+  }
+
+  const openForm = () => {}
+
   return (
     <NavWrapper>
       <MobileHeader>
-        <LogoIcon width="inerit" height="inherit" />
+        <LogoIcon width="inherit" height="inherit" />
       </MobileHeader>
       <DesktopHeader>
         <PrimaryButton
           width="inherit"
           height="inherit"
-          text={"Chat"}
+          text={"Submit a form"}
+          onClick={openForm}
+        />
+        <PrimaryButton
+          width="inherit"
+          height="inherit"
+          text={"Our Github"}
+          onClick={openGithub}
+          icon={<GithubIcon width={"35px"} height={"35px"} />}
+        />
+        <PrimaryButton
+          width="inherit"
+          height="inherit"
+          text={"Build with us"}
           onClick={openMailClient}
+          icon={<ChatIcon width={"35px"} height={"35px"} />}
         />
       </DesktopHeader>
     </NavWrapper>

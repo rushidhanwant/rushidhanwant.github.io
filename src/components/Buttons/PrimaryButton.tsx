@@ -7,10 +7,12 @@ const PrimaryButton = ({
   height,
   text,
   onClick,
+  icon
 }: PrimaryButtonProps) => {
   return (
     <StyledPrimaryButton width={width} height={height} onClick={onClick}>
       {text}
+      {icon ? icon : null}
     </StyledPrimaryButton>
   );
 };
