@@ -177,15 +177,18 @@ export const PastWorkWrapper = styled.div`
 export const CompanyLogo = styled.div`
   margin: 10px auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   width: 50%;
+  gap: 90px;
   text-align: center;
   @media only screen and (max-width: 1200px) {
     width: 60%;
   }
   @media only screen and (max-width: 900px) {
     width: 70%;
+    gap: 0px;
   }
   @media only screen and (max-width: 768px) {
     width: 50%;
