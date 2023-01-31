@@ -46,7 +46,7 @@ const LandingPage = () => {
     <>
       <section>
         <HeadingWrapper>
-          <Text size="7vw" family="Death Star" weight="400" lineHeight="85vw">
+          <Text size="7vw" family="Death Star" weight="400" lineHeight="80vw">
             <span>HEY, WE'RE DMC-12</span>
           </Text>
         </HeadingWrapper>
@@ -204,19 +204,19 @@ const LandingPage = () => {
           </TechStackWrapper>
           <CompanyLogo>
             <ImageContainer>
-              <img src={Solidity} width="50%" height="auto" />
+              <img src={Solidity} alt={"solidity lang"} width="50%" height="auto" />
             </ImageContainer>
             <ImageContainer>
-              <img src={Rust} width="100%" height="auto" />
+              <img src={Rust} alt={"rust lang"} width="100%" height="auto" />
             </ImageContainer>
             <ImageContainer>
-              <img src={Typescript} width="50%" height="auto" />
+              <img src={Typescript} alt={"typescript lang"} width="50%" height="auto" />
             </ImageContainer>
             <ImageContainer>
-              <img src={Polygon} width="50%" height="auto" />
+              <img src={Polygon} alt={"polygon"} width="50%" height="auto" />
             </ImageContainer>
             <ImageContainer>
-              <img src={Ceramic} width="50%" height="auto" />
+              <img src={Ceramic} alt={"ceramic"} width="50%" height="auto" />
             </ImageContainer>
           </CompanyLogo>
         </TechStackSection>
@@ -230,22 +230,22 @@ const LandingPage = () => {
             <CompanyLogo>
                 <ImageContainer>
                     <a href={"https://messari.io/"} target={"_blank"}>
-                        <img src={Messari} width="100%" height="auto" />
+                        <img src={Messari} alt={"messari"} width="100%" height="auto" />
                     </a>
                 </ImageContainer>
                 <ImageContainer>
                   <a href={"https://devnode.network/"} target={"_blank"}>
-                    <img src={DevNode} width="60%" height="auto" />
+                    <img src={DevNode} alt={"devnode"} width="60%" height="auto" />
                   </a>
                 </ImageContainer>
                 <ImageContainer>
                     <a href={"https://www.clipto.io/"} target={"_blank"}>
-                        <img src={Clipto} width="50%" height="auto" />
+                        <img src={Clipto} alt={"clipto"} width="50%" height="auto" />
                     </a>
                 </ImageContainer>
                 <ImageContainer>
                   <a href={"https://www.macysinc.com/"} target={"_blank"}>
-                    <img src={Macys} width="100%" height="auto" />
+                    <img src={Macys} alt={"macys"} width="100%" height="auto" />
                   </a>
                 </ImageContainer>
             </CompanyLogo>

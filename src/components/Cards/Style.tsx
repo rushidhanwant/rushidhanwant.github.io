@@ -7,7 +7,7 @@ export const CollabCardContainer = styled.div`
   gap: 45px;
   padding: 46px 62px;
   
-  max-width: 300px;
+  max-width: 280px;
   height: 450px;
   border: 7px solid #FBFBFB;
   border-radius: 28px;

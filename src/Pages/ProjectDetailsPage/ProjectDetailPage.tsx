@@ -10,7 +10,7 @@ const Paragraph = ({ title, description }: ParagraphProps) => {
         <span>{title}</span>
       </Text>
       <Description>
-        <Text size="16px" family="Advent Pro" weight="700" lineHeight="40px">
+        <Text size="22px" family="Advent Pro" weight="700" lineHeight="40px">
           <span>{description}</span>
         </Text>
       </Description>
