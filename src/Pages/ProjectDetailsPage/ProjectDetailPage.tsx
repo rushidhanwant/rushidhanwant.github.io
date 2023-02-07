@@ -1,7 +1,13 @@
 import React from "react";
 import Text from "../../components/Text/Text";
-import {Description, ImagesWrapper, ParagraphWrapper} from "./Style";
-import {ProjectPageProps, ParagraphProps} from "./types";
+import {
+  Description,
+  ImagesWrapper,
+  ParagraphWrapper,
+  GlobalStyle,
+  ProjectTitleSection,
+} from "./Style";
+import { ProjectPageProps, ParagraphProps } from "./types";
 
 const Paragraph = ({ title, description }: ParagraphProps) => {
   return (
@@ -15,22 +21,28 @@ const Paragraph = ({ title, description }: ParagraphProps) => {
         </Text>
       </Description>
     </div>
-  )
-}
+  );
+};
 
-const ProjectPage = (props: ProjectPageProps) => {
+const ProjectDetailsPage = (props: ProjectPageProps) => {
   // const elements = window.document.getElementsByTagName("html");
   // elements[0].style.backgroundImage = `url("")`;
 
   return (
     <>
-      <section>
-        <Text size="4vw" family="Death Star" weight="400" lineHeight="20vw">
+      <GlobalStyle />
+      <ProjectTitleSection>
+        <Text size="64px" family="Death Star" weight="400" lineHeight="74px">
           <span>{props.title}</span>
         </Text>
-      </section>
+      </ProjectTitleSection>
       <section style={{ margin: "5% 10%" }}>
-        <img src={props.cover} alt={"project-cover"} width={"100%"} height={"auto"} />
+        <img
+          src={props.cover}
+          alt={"project-cover"}
+          width={"100%"}
+          height={"auto"}
+        />
       </section>
       <section>
         <ParagraphWrapper>
@@ -39,16 +51,20 @@ const ProjectPage = (props: ProjectPageProps) => {
         </ParagraphWrapper>
       </section>
       <ImagesWrapper>
-        {
-          props.images.map((image, index) => {
-            return (
-              <img key={index} src={image} alt={"screen"} width={"100%"} height={"auto"} />
-            );
-          })
-        }
+        {props.images.map((image, index) => {
+          return (
+            <img
+              key={index}
+              src={image}
+              alt={"screen"}
+              width={"100%"}
+              height={"auto"}
+            />
+          );
+        })}
       </ImagesWrapper>
     </>
-  )
-}
+  );
+};
 
-export default ProjectPage;
+export default ProjectDetailsPage;
