@@ -16,7 +16,7 @@ export const NavWrapper = styled.nav`
   }
 `;
 
-export const MobileHeader = styled.div`
+export const Logo = styled.div`
   width: 12.7vw;
   max-width: 170px;
   height: auto;
@@ -31,6 +31,17 @@ export const DesktopHeader = styled.div`
   gap: 20px;
   height: 63px;
   @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const MobileHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 63px;
+  margin: 0px 30px;
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 `;
