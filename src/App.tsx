@@ -21,8 +21,8 @@ const ScrollToTop = () => {
 function App() {
   return (
     <AppWrapper>
+      <GlobalStyle />
       <BrowserRouter>
-        <GlobalStyle />
         <Header />
         <ScrollToTop />
         <Routes>
