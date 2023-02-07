@@ -10,7 +10,7 @@ export const HeadingWrapper = styled.div`
   flex-direction: column;
   margin: 5% 10px;
   margin-top: 0px;
-  
+
   @media only screen and (max-width: 600px) {
     & div:nth-child(1) {
       margin: 80% 10px;
@@ -49,11 +49,11 @@ export const FunnyTextWrapper = styled.div`
 `;
 
 export const AboutTextWrapper = styled.div`
-  padding:54px 0;
-  width:100%;
+  padding: 54px 0;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color:#040217;
+  background-color: #040217;
   //background-image: url("/assets/2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,9 +63,9 @@ export const AboutTextWrapper = styled.div`
   line-height: 28px;
   letter-spacing: 0em;
   text-align: center;
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 900px) {
     //background-image: url("/assets/2.png");
-    background-color:#040217;
+    background-color: #040217;
     background-position: center top 0px;
   }
   & div {
@@ -174,9 +174,35 @@ export const PastWorkWrapper = styled.div`
   }
 `;
 
-export const TechStackWrapper = styled(PastWorkWrapper)``;
+export const TechStackWrapper = styled(PastWorkWrapper)`
+  @media only screen and (max-width: 768px) {
+    padding-top: 0px;
+  }
+`;
 
-export const WorkFlowWrapper = styled(PastWorkWrapper)``;
+export const WorkFlowWrapper = styled(PastWorkWrapper)`
+  @media only screen and (max-width: 600px) {
+    & div:nth-child(1) {
+      font-family: "Death Star";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      margin-top: 0px !important;
+    }
+    & div:nth-child(2) {
+      font-family: "Raven Sans NBP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 253.54%;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px !important;
+    }
+  }
+`;
 
 export const ProjectWrapper = styled(PastWorkWrapper)``;
 
@@ -191,6 +217,21 @@ export const CollaborationWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 0 20px;
   }
+
+  @media only screen and (max-width: 600px) {
+    & div > div {
+      font-family: "Raven Sans NBP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 48px;
+      text-align: center;
+      word-break: break-word;
+    }
+    & > div {
+      padding: 25px;
+    }
+  }
 `;
 
 export const CompanyLogo = styled.div`
@@ -200,7 +241,7 @@ export const CompanyLogo = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
-  gap: 90px;
+  gap: 50px;
   text-align: center;
   @media only screen and (max-width: 1200px) {
     width: 60%;
@@ -238,7 +279,6 @@ export const TechStackSection = styled(PastWorkSection)`
 `;
 
 export const ProjectSection = styled(PastWorkSection)`
-
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -249,6 +289,9 @@ export const WorkflowSection = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 257px;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 136px;
+  }
 `;
 
 export const BottomSectionWrapper = styled.div`
@@ -268,14 +311,15 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 120px;
-  margin: 0 85px;
-  justify-content: center;
+  width: 100%;
+  padding: 0px 85px;
+  box-sizing: border-box;
+  justify-content: space-between;
   align-items: center;
 `;
 
 export const ImageHolder = styled.div`
-  width: 588px;
+  width: 45%;
   height: 381px;
   position: relative;
   background-color: #040217;
@@ -291,5 +335,42 @@ export const ImageHolder = styled.div`
 export const LandingPageHr = styled.div`
   @media only screen and (max-width: 900px) {
     display: none;
+  }
+`;
+
+export const TextContanier = styled.div`
+  display: flex;
+  flex-direction: column;
+  justiy-content: space-between;
+  height: 100%;
+  width: 45%;
+  position: relative;
+  margin: 10px;
+`;
+
+export const ProjectsMobileTitle = styled.div`
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    padding-top: 100px;
+  }
+`;
+
+export const ProjectMobileSection = styled.div`
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+`;
+
+export const MobileProjectCard = styled.div`
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
