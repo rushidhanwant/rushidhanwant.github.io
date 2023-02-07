@@ -31,5 +31,8 @@ jobs:
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
-        name: production-files
+        name: github-pages
         path: ./dist
+        
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v1
