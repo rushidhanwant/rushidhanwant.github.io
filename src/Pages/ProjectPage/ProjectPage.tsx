@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Text from "../../components/Text/Text";
 import {
-  GlobalStyle,
   HeadingWrapper,
   MobileProjectCard,
   ProjectMobileSection,
@@ -13,7 +12,6 @@ import {
 const ProjectPage = () => {
   return (
     <>
-      <GlobalStyle />
       <section>
         <HeadingWrapper>
           <Text size="64px" family="Death Star" weight="400" lineHeight="4px">

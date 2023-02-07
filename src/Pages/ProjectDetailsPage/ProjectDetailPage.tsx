@@ -4,7 +4,6 @@ import {
   Description,
   ImagesWrapper,
   ParagraphWrapper,
-  GlobalStyle,
   ProjectTitleSection,
 } from "./Style";
 import { ProjectPageProps, ParagraphProps } from "./types";
@@ -30,7 +29,6 @@ const ProjectDetailsPage = (props: ProjectPageProps) => {
 
   return (
     <>
-      <GlobalStyle />
       <ProjectTitleSection>
         <Text size="64px" family="Death Star" weight="400" lineHeight="74px">
           <span>{props.title}</span>

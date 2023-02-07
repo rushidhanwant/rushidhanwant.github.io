@@ -26,6 +26,55 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const GlobalStyleProjectDetails = createGlobalStyle`
+  html {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: #040217;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    @media only screen and (max-width: 768px){
+      background-image: none;
+      background-position: center top 0px;
+    }
+  }
+  body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+`;
+
+export const GlobalStyleProjects = createGlobalStyle`
+  html {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: #040217;
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    @media only screen and (max-width: 768px){
+      background-image: url("/assets/ProjectBackgroundMobile.png");
+      background-position: center top 0px;
+    }
+  }
+  body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+`;
 export const AppWrapper = styled.div`
   width: 100%;
   height: auto;

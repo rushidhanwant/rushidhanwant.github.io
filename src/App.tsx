@@ -3,7 +3,12 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import ProjectDetailsPage from "./Pages/ProjectDetailsPage/ProjectDetailPage";
-import { GlobalStyle, AppWrapper } from "./Style";
+import {
+  GlobalStyle,
+  AppWrapper,
+  GlobalStyleProjectDetails,
+  GlobalStyleProjects,
+} from "./Style";
 import { Projects } from "./api/projects";
 import { useEffect } from "react";
 import ProjectPage from "./Pages/ProjectPage/ProjectPage";
@@ -21,21 +26,46 @@ const ScrollToTop = () => {
 function App() {
   return (
     <AppWrapper>
-      <GlobalStyle />
       <BrowserRouter>
         <Header />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <GlobalStyle />
+                <LandingPage />
+              </>
+            }
+          />
           <Route
             path="/devnode"
-            element={<ProjectDetailsPage {...Projects[0]} />}
+            element={
+              <>
+                <GlobalStyleProjectDetails />
+                <ProjectDetailsPage {...Projects[0]} />
+              </>
+            }
           />
           <Route
             path="/clipto"
-            element={<ProjectDetailsPage {...Projects[1]} />}
+            element={
+              <>
+                <GlobalStyleProjectDetails />
+                <ProjectDetailsPage {...Projects[1]} />
+              </>
+            }
           />
-          <Route path="/projects" element={<ProjectPage />} />
+          <Route
+            path="/projects"
+            element={
+              <>
+                <GlobalStyleProjects />
+                <ProjectPage />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </BrowserRouter>
